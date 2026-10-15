@@ -33,3 +33,7 @@ Mở địa chỉ local mà Gradio in ra. Cấp quyền camera và microphone kh
 - Render Free có giới hạn tài nguyên và có thể ngủ khi không hoạt động.
 - Nhận dạng giọng nói trên trình duyệt phụ thuộc thiết bị và trình duyệt.
 - Đây là nguyên mẫu nghiên cứu, không phải thiết bị dẫn đường được chứng nhận. Không dùng làm chỉ dẫn di chuyển duy nhất.
+
+
+### Runtime version
+The project includes `.python-version` to request Python 3.11.11 on Render and pins Gradio to 5.49.1 to avoid unplanned dependency changes. After replacing the files in GitHub, trigger a new deploy and check the build logs to confirm the selected Python version.
