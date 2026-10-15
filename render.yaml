@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: 67sight-live
+    runtime: python
+    plan: free
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
